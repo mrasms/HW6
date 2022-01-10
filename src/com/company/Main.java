@@ -6,8 +6,9 @@ public class Main {
         Boss boss = new Boss();
         boss.setHealth(1200);
         boss.setDamage(50);
-        boss.getSword().setNameOfWeapon("Sword");
-        boss.getSword().setTypeOfWeapon("One hand weapon");
+        boss.setSword(new Weapon ());
+        boss.sword.setNameOfWeapon("Sword");
+        boss.sword.setTypeOfWeapon("One hand weapon");
 
         System.out.println(boss.getHealth() + " "
                          + boss.getDamage() + " "
@@ -20,15 +21,17 @@ public class Main {
         skull.setHealth(500);
         skull.setDamage(40);
         skull.setNumberOfArrows(10);
-        skull.getSword().setTypeOfWeapon("Ranged weapon");
-        skull.getSword().setNameOfWeapon("Bow");
+        skull.setSword(new Weapon());
+        skull.sword.setTypeOfWeapon("Ranged weapon");
+        skull.sword.setNameOfWeapon("Bow");
 
         Skeleton nitro = new Skeleton();
         nitro.setHealth(500);
         nitro.setDamage(45);
         nitro.setNumberOfArrows(20);
-        nitro.getSword().setNameOfWeapon("Green-Bow");
-        nitro.getSword().setTypeOfWeapon("Ranged weapon");
+        nitro.setSword(new Weapon());
+        nitro.sword.setNameOfWeapon("Green-Bow");
+        nitro.sword.setTypeOfWeapon("Ranged weapon");
 
         System.out.println("Скелет Skull: " + skull.printInfo());
         System.out.println("Скелет Nitro: " + nitro.printInfo());

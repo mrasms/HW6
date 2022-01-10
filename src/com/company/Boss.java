@@ -2,7 +2,7 @@ package com.company;
 
 public class Boss extends GameEntity{
 
-    Weapon sword = new Weapon();
+    Weapon sword;
 
     public Weapon getSword() {
 
